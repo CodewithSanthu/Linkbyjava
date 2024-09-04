@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results for "<span th:text="${query}"></span>" in <span th:text="${category}"></span></h1>
+    <ul>
+        <li th:each="result : ${results}" th:text="${result}">Result</li>
+    </ul>
+</body>
+</html>
